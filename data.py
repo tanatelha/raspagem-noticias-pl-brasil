@@ -1,5 +1,7 @@
 from datetime import date, datetime
 
+# Função para identificar o dia da raspagem
+
 def data_de_hoje():
     data = date.today()
 
