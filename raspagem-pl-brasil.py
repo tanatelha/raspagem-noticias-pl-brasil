@@ -36,4 +36,4 @@ def raspagem_pl_brasil():
 
     raspagem.append(["", manchete, "", autor, str(data_hora), hora, "", link])
 
-    return 'ok'
+    return 'raspagem adicionada'
