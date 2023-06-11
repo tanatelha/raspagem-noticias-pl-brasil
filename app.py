@@ -13,6 +13,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 # importanto funcoes de outros arquivos do repositório
 from contagem_palavras import contagem_palavras
+from data import data_ontem
 
 
 # variáveis de ambiente
