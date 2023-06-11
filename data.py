@@ -1,11 +1,11 @@
-from datetime import date, datetime
+from datetime import datetime, date, timedelta
 
-# Função para identificar o dia da raspagem
+# Função para identificar o dia anterior da raspagem
 
-def data_de_hoje():
-    data = date.today()
+def data_ontem():
+  data_hoje = datetime.now().date()
+  data_ontem = data_hoje - timedelta(days=1)
 
-    # método strftime() é usado para formatar a data como uma string no formato "dd/mm/aaaa"
-    data_formatada = data.strftime('%d/%m/%Y') 
-    
-    return data_formatada
+  data_formatada = data_ontem.strftime(f"%d/%m/%Y")
+
+  return data_formatada
