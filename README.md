@@ -9,7 +9,7 @@ Para utilizar esse robô, você irá precisar de alguns processos:
 ## Arquivos
 * **app.py:** contém aplicação do robo raspador com os sites criado no Flask para automatização
 * **data.py:** contém uma função que identifica o dia anterior ao dia em questão
-**contagem_palavras.py:** contém um código que calcula a quantidade de palavras de cada texto
+* **contagem_palavras.py:** contém um código que calcula a quantidade de palavras de cada texto
 * **requirements.txt:** é um arquivo de texto que possui todas as bibliotecas que precisam ser instaladas para rodar o código dentro da nuvem
 
 ## Contato
