@@ -17,10 +17,12 @@ from contagem_palavras import contagem_palavras
 
 # variáveis de ambiente
 
-GOOGLE_SHEETS_KEY = os.environ["GOOGLE_SHEETS_KEY"] 
+GOOGLE_SHEETS_KEY = os.environ["GOOGLE_SHEETS_KEY"]
 GOOGLE_SHEETS_CREDENTIALS = os.environ['GOOGLE_SHEETS_CREDENTIALS']
+with open("credenciais.json", mode="w") as arquivo:
+    arquivo.write(GOOGLE_SHEETS_CREDENTIALS)
+conta = ServiceAccountCredentials.from_json_keyfile_name("credenciais.json")
 
-conta = ServiceAccountCredentials.from_json_keyfile_name(GOOGLE_SHEETS_CREDENTIALS)
 api = gspread.authorize(conta)
 planilha = api.open_by_key(f'{GOOGLE_SHEETS_KEY}') 
 
